@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel='stylesheet' href='./style.css'>
+    </head>
+    <body>
+        <div id='outWraper'>
+            <div id='inWraperLeft'>
+                <div id='leftField'>
+                    <div class='gameZones'> LEFT player zone</div>
+                    <button id='left' class='cleaner'>Restart placing</button>
+                    <!-- <form class='shooter'>
+                        <label for='letter'>Letter</label>
+                        <input class='letter' value='e'>
+                        <label for='number'>Number</label>
+                        <input class='number' value='2'>
+                        <input id='leftShooter' type="submit" value="SHOOT">
+                    </form> -->
+                </div>
+
+                <div id='leftEnemyField'>
+                    <div class='gameZones'> Your enemy field map</div>
+                </div>
+            </div>
+
+            <div id='inWraperRight'>
+                <div id='rightField'>
+                    <div class='gameZones'> RIGHT player zone</div>
+                    <button id='right' class='cleaner'>Restart placing</button>
+                    <!-- <form class='shooter'>
+                        <label for='letter'>Letter</label>
+                        <input class='letter' value='e'>
+                        <label for='number'>Number</label>
+                        <input class='number' value='2'>
+                        <input id='rightShooter' type="submit" value="SHOOT">
+                    </form> -->
+                </div>
+
+                <div id='rightEnemyField'>
+                    <div class='gameZones'> Your enemy field map</div>
+                </div>
+            </div>
+        </div>
+
+        <script src='./createZones.js'></script>
+        <script src='./placeShips.js'></script>
+        <script src='./shooting_1.js'></script>
+    </body>
+</html>

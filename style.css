@@ -1,0 +1,104 @@
+#outWraper {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#inWraperLeft,
+#inWraperRight {
+    visibility: visible;
+}
+
+.table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin: 50px 40px 0 80px;
+    table-layout: fixed;
+}
+
+.table th {
+    border: 2px solid black;
+    width: 2em;
+    height: 2em;
+}
+
+#leftField,
+#rightField {
+    flex: 1 1;
+}
+
+#leftEnemyField,
+#rightEnemyField {
+    display: none;
+    margin-top: 13%;
+}
+
+.gameZones {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#leftField th,
+#leftField .selected,
+#leftField .gameZones,
+#leftEnemyField th,
+#leftEnemyField .gameZones {
+    background-color: tomato !important;
+}
+
+#leftField td,
+#leftEnemyField td {
+    border: 2px dotted tomato;
+}
+
+#rightField th,
+#rightField .selected,
+#rightField .gameZones,
+#rightEnemyField th,
+#rightEnemyField .gameZones {
+    background-color: teal;
+}
+
+#rightField td,
+#rightEnemyField td {
+    border: 2px dotted teal;
+}
+
+.gameCell {
+    cursor: pointer;
+}
+
+#leftField .highlighted {
+    background-color: rgba(255, 0, 0, .1);
+}
+
+#rightField .highlighted {
+    background-color: rgba(73, 140, 161, .2);
+}
+
+.shooter {
+    display: none;
+}
+
+.letter,
+.number {
+    width: 2em;
+}
+
+.shooter button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.missed {
+    background-color: chartreuse;
+}
+
+.blessed {
+    background-color: red;
+}
+
+.killed {
+    background-color: black;
+}
